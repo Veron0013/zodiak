@@ -20,10 +20,26 @@
 				justify-content: center;
 				align-items: center;
 				height: 100vh;
-				background-color: #222;
+				background: #f0f2f8;
 				color: #fff;
 				font-family: Arial, sans-serif;
 				justify-content: center;
+			}
+
+			h2 {
+				position: absolute;
+				padding-top: 450px;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 160%;
+				letter-spacing: 0.03em;
+				text-align: center;
+				color: #3e3e3e;
+			}
+			img {
+				/*max-width: 118px;*/
+				border-radius: 32px;
+				padding-bottom: 8px;
 			}
 			.splash-screen {
 				text-align: center;
@@ -44,29 +60,20 @@
 				}
 			}
 		</style>
-		<link rel="stylesheet" href="./css/stile.css" />
+		<!--<link rel="stylesheet" href="./css/stile.css" />-->
 	</head>
 	<body>
+		<h1 hidden>Вітаємо у Zodiak!</h1>
 		<div class="splash-screen">
-			<h1 hidden>Вітаємо у Zodiak!</h1>
 			<div class="spinner"></div>
-			<img
-				src="./image/Horoscope.jpg"
-				alt="Horoscope"
-				style="
-					width: 428;
-					height: 558;
-					padding-bottom: 56px;
-					background: #f0f2f8;
-				"
-			/>
-			<h2>Зодіакальний бандерогусь</h2>
+			<img class="main_img" src="./image/Horoscope.jpg" alt="Horoscope" />
 		</div>
+		<h2>Зодіакальний бандерогусь</h2>
 
-		<script>
+		<!--<script>
 			setTimeout(function () {
 				window.location.href = "main.html" // основна сторінка додатку
 			}, 3000) // 2 секунди
-		</script>
+		</script>-->
 	</body>
 </html>

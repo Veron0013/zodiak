@@ -34,7 +34,7 @@ a {
 }
 
 img {
-	max-width: 118px;
+	/*max-width: 118px;*/
 	border-radius: 32px;
 	padding-bottom: 8px;
 }
