@@ -34,7 +34,7 @@ a {
 }
 
 img {
-	max-width: 120px;
+	max-width: 118px;
 	border-radius: 32px;
 	padding-bottom: 8px;
 }
@@ -42,17 +42,15 @@ img {
 .main-text:hover {
 	font-weight: 700;
 	transition: 0.15s;
-	padding: 2px;
-
 }
 
 img:hover {
-	border: 2px solid orange;
+	border: 2px solid #007AFF;
 	transition: 0.15s;
 }
 
 img:active {
-	border: 4px solid rgb(77, 52, 7);
+	border: 4px solid #002750;
 }
 
 li {
