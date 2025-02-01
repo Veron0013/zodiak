@@ -22,6 +22,7 @@ h1 {
 
 a {
 	text-decoration: none;
+	margin: 2px 2px;
 }
 
 img {
@@ -30,15 +31,26 @@ img {
 }
 
 .main-text:hover,
-li:hover,
-a:hover {
+li:hover {
 	font-weight: 700;
-	transition: 0.5s;
+	transition: 0.15s;
+	padding: 2px;
+
+}
+
+img:hover {
+	border: 2px solid orange;
+	transition: 0.15s;
+}
+
+img:active {
+	border: 4px solid rgb(77, 52, 7);
 }
 
 li {
 	display: flex;
 	justify-content: center;
+	padding-bottom: 24px;
 }
 
 .row-wrapper {
