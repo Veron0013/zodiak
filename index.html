@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Завантаження...</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<style>
+			body {
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				background-color: #222;
+				color: #fff;
+				font-family: Arial, sans-serif;
+				justify-content: center;
+			}
+			.splash-screen {
+				text-align: center;
+			}
+			.spinner {
+				position: absolute;
+				border: 4px solid #444;
+				border-top: 4px solid #00d4ff;
+				border-radius: 50%;
+				width: 50px;
+				height: 50px;
+				animation: spin 1s linear infinite;
+				margin: 250px 190px;
+			}
+			@keyframes spin {
+				to {
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+		<link rel="stylesheet" href="./css/stile.css" />
+	</head>
+	<body>
+		<div class="splash-screen">
+			<h1 hidden>Вітаємо у Zodiak!</h1>
+			<div class="spinner"></div>
+			<img
+				src="./image/Horoscope.jpg"
+				alt="Horoscope"
+				style="
+					width: 428;
+					height: 558;
+					padding-bottom: 56px;
+					background: #f0f2f8;
+				"
+			/>
+			<h2>Зодіакальний бандерогусь</h2>
+		</div>
+
+		<script>
+			setTimeout(function () {
+				window.location.href = "main.html" // основна сторінка додатку
+			}, 3000) // 2 секунди
+		</script>
+	</body>
+</html>
