@@ -4,7 +4,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	text-align: center;
 	justify-content: center;
-	padding: 100px 18px 118px 18px;
+	padding: 100px 18px 24px 18px;
 	box-sizing: border-box;
 	background: #f0f2f8;
 }
@@ -34,12 +34,12 @@ a {
 }
 
 img {
-	border-radius: 30px;
+	max-width: 120px;
+	border-radius: 32px;
 	padding-bottom: 8px;
 }
 
-.main-text:hover,
-li:hover {
+.main-text:hover {
 	font-weight: 700;
 	transition: 0.15s;
 	padding: 2px;
