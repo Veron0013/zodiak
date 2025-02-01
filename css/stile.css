@@ -1,10 +1,10 @@
 body {
-	width: 428px;
+	max-width: 428px;
 	margin: 0 auto;
 	font-family: "Montserrat", sans-serif;
 	text-align: center;
 	justify-content: center;
-	padding: 100px 24px 118px 24px;
+	padding: 100px 18px 118px 18px;
 	box-sizing: border-box;
 	background: #f0f2f8;
 }
@@ -31,7 +31,6 @@ h2 {
 
 a {
 	text-decoration: none;
-	margin: 2px 2px;
 }
 
 img {
@@ -73,7 +72,7 @@ li {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	gap: 22px;
+	gap: 16px;
 	max-width: 380px;
 }
 
