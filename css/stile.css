@@ -2,9 +2,9 @@ body {
 	max-width: 428px;
 	margin: 0 auto;
 	font-family: "Montserrat", sans-serif;
-	text-align: center;
+	align-items: center;
 	justify-content: center;
-	padding: 28px 16px 24px 16px;
+	padding: 0;
 	box-sizing: border-box;
 	background: #f0f2f8;
 }
@@ -37,6 +37,13 @@ img {
 	/*max-width: 118px;*/
 	border-radius: 32px;
 	padding-bottom: 8px;
+	border: 4px solid transparent;
+}
+
+.main-wrapper {
+	margin: 10px 2px;
+	justify-content: center;
+	align-items: center;
 }
 
 .main-text:hover {
@@ -45,7 +52,7 @@ img {
 }
 
 img:hover {
-	border: 2px solid #007AFF;
+	border: 4px solid #007AFF;
 	transition: 0.15s;
 }
 
@@ -61,7 +68,8 @@ li {
 
 .row-wrapper {
 	width: 100%;
-
+	align-items: center;
+	justify-content: center;
 }
 
 .main-row {
@@ -70,8 +78,8 @@ li {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	gap: 16px;
-	max-width: 380px;
+	gap: 12px;
+	width: 100%;
 }
 
 .main-text {
