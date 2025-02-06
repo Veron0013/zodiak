@@ -61,7 +61,7 @@ header {
 li {
 	display: flex;
 	justify-content: center;
-	padding-bottom: 24px;
+	padding-bottom: 16px;
 }
 
 .row-wrapper {
@@ -76,7 +76,7 @@ li {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	gap: 12px;
+	gap: 2px;
 	width: 100%;
 }
 
@@ -86,4 +86,5 @@ li {
 	line-height: 125%;
 	text-align: center;
 	color: #3e3e3e;
+	width: 128px;
 }
