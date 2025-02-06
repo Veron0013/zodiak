@@ -10,8 +10,8 @@ body {
 }
 
 h1 {
-	margin: 0 0 40px 0;
 	padding: 0;
+	margin: 0 auto;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 160%;
@@ -29,6 +29,10 @@ img {
 	border-radius: 32px;
 	padding-bottom: 8px;
 	border: 4px solid transparent;
+}
+
+header {
+	margin-bottom: 20px;
 }
 
 .main-wrapper {
