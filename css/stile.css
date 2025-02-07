@@ -58,6 +58,10 @@ header {
 	align-items: center;
 }
 
+.container {
+	margin: 0 10px;
+}
+
 .main-text:hover,
 .main-text:focus {
 	font-weight: 700;
