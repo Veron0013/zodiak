@@ -129,7 +129,14 @@ li {
 	justify-items: center;
 }
 
-.link-back {}
+.link-back:hover,
+.link-back:focus {
+	font-weight: 700;
+}
+
+.link-back {
+	transition: 0.3s;
+}
 
 .sign-block {}
 
@@ -139,6 +146,16 @@ li {
 .s-attr-title {
 	font-weight: 700;
 	margin: 0 0 0 16px;
+	text-align: center;
+}
+
+.sign-title {
+	margin-bottom: 8px;
+}
+
+
+#slogan {
+	width: 100%;
 }
 
 .sign-name {}
@@ -165,6 +182,7 @@ li {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 8px;
 }
 
 .s-attr-item-image {}

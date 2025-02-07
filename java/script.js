@@ -1,31 +1,37 @@
 
 
+const params = new URLSearchParams(window.location.search);
+
+loadText(Number(params.get('id')));
+
 function loadText(buttonId) {
-	// Завантажуємо JSON файл після натискання кнопки
+	console.log(buttonId);
+
 	fetch('data.json')
-		.then(response => response.json()) // перетворюємо відповідь на JSON
-		.then(buttonTexts => {
-			if (buttonTexts[id] == buttonId) {
-				console.log(buttonTexts);
+		.then(response => response.json())
+		.then(data => {
+			const item = data.find(zodiac => zodiac.id === buttonId);
 
-				buttonTexts.forEach(val => {
-					console.log(val);
-
+			if (item) {
+				for (const [key, value] of Object.entries(item)) {
 					try {
-						document.getElementById("paragraph").textContent = val;
+						const element = document.getElementById(key);
+						if (element && element.tagName === 'IMG') {
+							element.setAttribute("src", value);
+							//картинки
+						} else if (element) {
+							element.innerHTML = value;
+							//текст
+						} else {
+							//console.warn(`Елемент з id="${key}" не знайдено.`);
+						}
 					} catch (error) {
-
+						console.error(`Помилка при оновленні елемента з id="${key}":`, error);
 					}
-				});
+				}
+			} else {
+				//console.error('Обʼєкт з id=2 не знайдено.');
 			}
-			const paragraph = document.getElementById("paragraph");
-			paragraph.textContent = buttonTexts[buttonId]; // Виводимо текст відповідно до id кнопки
 		})
-		.catch(error => console.error('Error loading JSON file:', error));
+		.catch(error => console.error('Помилка завантаження JSON:', error));
 }
-
-loadText(1);
-// Прив'язуємо обробники подій до кнопок
-//document.getElementById("btn1").addEventListener("click", () => loadText("btn1"));
-//document.getElementById("btn2").addEventListener("click", () => loadText("btn2"));
-//document.getElementById("btn3").addEventListener("click", () => loadText("btn3"));
