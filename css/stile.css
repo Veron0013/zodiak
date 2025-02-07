@@ -20,8 +20,19 @@ h1 {
 	color: #3e3e3e;
 }
 
+p {
+	padding: 0;
+	margin: 0 auto;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.03em;
+	color: #3e3e3e;
+}
+
 a {
 	text-decoration: none;
+	font-size: 17px;
 }
 
 img {
@@ -29,6 +40,12 @@ img {
 	border-radius: 32px;
 	padding-bottom: 8px;
 	border: 4px solid transparent;
+}
+
+.s-attr-item-image {
+	border-radius: 0;
+	padding-bottom: 0;
+	border: 0;
 }
 
 header {
@@ -87,4 +104,70 @@ li {
 	text-align: center;
 	color: #3e3e3e;
 	width: 128px;
+}
+
+.desc-header {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.sign-block {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+}
+
+.sign-block-title {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+}
+
+.link-back {}
+
+.sign-block {}
+
+.sign-img {}
+
+.sign-title,
+.s-attr-title {
+	font-weight: 700;
+	margin: 0 0 0 16px;
+}
+
+.sign-name {}
+
+.sign_description {
+	margin-bottom: 20px;
+}
+
+.s-attr {
+	padding: 0;
+	margin: 0;
+}
+
+.s-attr-item {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-items: center;
+	margin-bottom: 20px;
+}
+
+.s-item-block {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.s-attr-item-image {}
+
+.s-attr {}
+
+.s-attr-desc {
+	padding: 0;
+	margin: 0;
 }
