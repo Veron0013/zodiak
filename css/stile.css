@@ -112,7 +112,7 @@ li {
 
 .desc-header {
 	padding-top: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 24px;
 }
 
 .sign-block {
@@ -156,6 +156,7 @@ li {
 
 #slogan {
 	width: 100%;
+	margin: auto;
 }
 
 .sign-name {}
@@ -175,14 +176,14 @@ li {
 	flex-direction: column;
 	align-items: start;
 	justify-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 }
 
 .s-item-block {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 8px;
+	margin-bottom: 6px;
 }
 
 .s-attr-item-image {}
