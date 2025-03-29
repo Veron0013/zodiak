@@ -1,19 +1,19 @@
-let currentLanguage = 'en';
+let currentLanguage = 'ua';
 
 const params = new URLSearchParams(window.location.search);
+const switcher = document.getElementById("lang_input");
 
-loadText(Number(params.get('id')));
+function loadText() {
 
-function loadText(buttonId) {
-	console.log(buttonId);
-
-	fetch('data.json')
+	fetch('translations.json')
 		.then(response => response.json())
 		.then(data => {
-			const item = data.find(zodiac => zodiac.id === buttonId);
+			const texts = data[currentLanguage];
 
-			if (item) {
-				for (const [key, value] of Object.entries(item)) {
+			console.log(texts);
+
+			if (texts) {
+				for (const [key, value] of Object.entries(texts)) {
 					try {
 						const element = document.getElementById(key);
 						if (element && element.tagName === 'IMG') {
@@ -35,3 +35,18 @@ function loadText(buttonId) {
 		})
 		.catch(error => console.error('Помилка завантаження JSON:', error));
 }
+
+function changeLanguage() {
+	if (switcher.checked) {
+		currentLanguage = 'en';
+	} else {
+		currentLanguage = 'ua';
+	}
+	console.log(currentLanguage);
+
+	loadText();
+}
+
+loadText();
+
+switcher.addEventListener("click", changeLanguage);

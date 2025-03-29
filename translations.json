@@ -1,0 +1,14 @@
+{
+	"en": {
+		"appTitle": "Zodiak Banderogus",
+		"chooseSign": "Choose your zodiac sign",
+		"compatibility": "Check compatibility",
+		"description": "Find out your daily horoscope and compatibility with others."
+	},
+	"ua": {
+		"appTitle": "Зодіакальний бандерогусь",
+		"chooseSign": "Оберіть свій знак зодіаку",
+		"compatibility": "Перевірити сумісність",
+		"description": "Дізнайтесь свій щоденний гороскоп та сумісність з іншими."
+	}
+}
