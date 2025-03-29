@@ -10,7 +10,7 @@ function loadText() {
 		.then(data => {
 			const texts = data[currentLanguage];
 
-			console.log(texts);
+			//console.log(texts);
 
 			if (texts) {
 				for (const [key, value] of Object.entries(texts)) {
@@ -42,7 +42,7 @@ function changeLanguage() {
 	} else {
 		currentLanguage = 'ua';
 	}
-	console.log(currentLanguage);
+	//console.log(currentLanguage);
 
 	loadText();
 }
